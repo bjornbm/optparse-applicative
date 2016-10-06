@@ -30,6 +30,7 @@ Here is a simple example of an applicative option parser:
 
 ```haskell
 import Options.Applicative
+import Data.Semigroup ((<>))
 
 data Sample = Sample
   { hello :: String
